@@ -14,8 +14,8 @@ document.getElementById('clickcatcher').addEventListener('click', function () {
 		player.setVolume(100);
 		player.playVideo();
 	}
-	if (window.BBXNotifyEngaged) {
-		window.BBXNotifyEngaged();
+	if (window.gmodinterface && gmodinterface.BBXNotifyEngaged) {
+		gmodinterface.BBXNotifyEngaged();
 	}
 	this.style.display = 'none';
 });
